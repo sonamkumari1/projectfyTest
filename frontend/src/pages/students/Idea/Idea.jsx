@@ -214,7 +214,7 @@ const Idea = () => {
 
   const fetchIdeas = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/api/v1/idea/all", {
+      const res = await axios.get("https://projectfytest.onrender.com/api/v1/idea/all", {
         withCredentials: true,
       });
       setIdeas(res.data.ideas);
@@ -232,12 +232,12 @@ const Idea = () => {
     try {
       if (editMode) {
         await axios.put(
-          `http://localhost:8000/api/v1/idea/update/${editingId}`,
+          `https://projectfytest.onrender.com/api/v1/idea/update/${editingId}`,
           ideaData,
           { withCredentials: true }
         );
       } else {
-        await axios.post("http://localhost:8000/api/v1/idea/add", ideaData, {
+        await axios.post("https://projectfytest.onrender.com/api/v1/idea/add", ideaData, {
           withCredentials: true,
         });
       }
@@ -261,7 +261,7 @@ const Idea = () => {
   const handleDelete = async () => {
     try {
       await axios.delete(
-        `http://localhost:8000/api/v1/idea/delete/${editingId}`,
+        `https://projectfytest.onrender.com/api/v1/idea/delete/${editingId}`,
         { withCredentials: true }
       );
       setIdeaData({ title: "", description: "" });

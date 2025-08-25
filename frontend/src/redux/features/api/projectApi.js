@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const PROJECT_API = "http://localhost:8000/api/v1/project";
+const PROJECT_API = "https://projectfytest.onrender.com/api/v1/project";
 
 export const projectApi = createApi({
   reducerPath: "projectApi",
