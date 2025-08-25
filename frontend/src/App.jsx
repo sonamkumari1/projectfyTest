@@ -17,12 +17,12 @@ import Projects from "./pages/students/Projects";
 import ProjectCategoryPage from "./pages/students/ProjectCategoryPage";
 import ProjectLevelPage from "./pages/students/ProjectLevelPage";
 import ProjectDetail from "./pages/students/ProjectDetail";
-import ProjectProgress from "./pages/students/projectProgress";
 import MyLearning from "./pages/students/MyLearning";
 import ProjectinDashboard from "./pages/students/ProjectinDashboard";
 import Idea from "./pages/students/Idea/Idea";
 import { AuthenticatedUser, ProtectedRoute } from "./components/ProtectedRoutes";
 import PurchaseProjectProtectedRoute from "./components/PurchaseProjectProtectedRoute";
+import ProjectProgress from "./pages/students/ProjectProgress";
 
 const appRouter = createBrowserRouter([
   {
